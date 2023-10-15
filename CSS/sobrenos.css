@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5aa6475b50a54f0331abee6d/1571717806610-XYUJKHMXPTLK4BJ52ELI/RichBrian_L1040972.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .container{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+.container:hover{
+    background-color: rgba(0, 0, 0, 0.815);
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.container .logo{
+    background-color: rgba(165, 42, 42, 0);
+    width: 20%;
+}
+
+.container .content{
+    background-color: rgba(10, 73, 65, 0);
+    width: 30%;
+    display: flex;
+}
+
+.content li{
+    list-style: none;
+    display: inline-flex;
+}
+
+.content a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 30px;
+    align-content: center;
+    padding: 15px;
+}
+
+.logo a{
+    display: inline-flex;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 50px;
+    padding: 15px;
+}
+
+/* SOBRE NOS */
+
+main{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.842);
+    width: 100%;
+    height: 80vh;
+    color: white;
+}
+
+.container1{
+    display: flex;
+}
+
+.txt{
+    width: 50%;
+    height: 75vh;
+    margin-top: 100px;
+    margin-left: 20px;
+    
+}
+
+.txt h1{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.txt p{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.img{
+    width: 50%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+.img img{
+    width: 800px;
+    height: 800px;
+}
+
+

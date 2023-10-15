@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/compra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100&display=swap"
+        rel="stylesheet">
+    <title>Camiseta1</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <a href="../HTML/index.html">
+                    <p id="text">THE SAILOR</p>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <br>
+
+    <main>
+        <div class="container-left">
+            <label for="nome">Nome</label><br>
+            <input type="text" name="" id="inomeUser" onblur="verificador('inomeUser')"><br>
+            
+            <label for="nome">Sobrenome</label><br>
+            <input type="text" name="" id="isobrenomeUser" onblur="verificador('isobrenomeUser')"><br>
+            
+            <label for="number">CEP</label><br>
+            <input type="text" name="" id="iCEP" id="iCEP" onblur="verificadorNumero('iCEP')" maxlength="8"><br>
+
+            <label for="nome">Endereço</label><br>
+            <input type="text" name="" id="iendereco" onblur="verificador('iendereco')"><br>
+
+            <label for="nome">Número</label><br>
+            <input type="text" name="" id="iendereconum" onblur="verificadorNumero('iendereconum')" maxlength="10"><br>
+            <input type="text" name="" id="icomplemento" placeholder="Apartamento,sala, suíte,etc.(opcional)"><br>
+
+            <label for="nome">Bairro</label><br>
+            <input type="text" name="" id="ibairro" onblur="verificador('ibairro')"><br>
+
+            <label for="nome">Cidade</label><br>
+            <input type="text" name="" id="icidade" onblur="verificador('icidade')"><br>
+
+            <label for="estado">Estado</label><br>
+            <select id="estado" name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select><br>
+            <label for="nome">Telefone</label><br>
+            <input type="text" name="" id="itelefone" onkeydown="leitorTel2('itelefone')" maxlength="12"><br>
+            <label for="nome">Endereço de e-mail</label><br>
+            <input type="text" name="" id="iemail" onblur="leitorEmail('iemail')"><br>
+
+            
+        </div>
+        <div class="container-right">
+            <h4>SEU PEDIDO</h4>
+            <div class="info-product">
+                <div class="info1">
+                    <h3>PRODUTO</h3>
+                    <h3>SUBTOTAL</h3>
+                </div>
+            
+                <div class="info">   
+                        <h3 id="iproduto"></h3>
+                        <h3 id="ipreco"></h3>
+                </div>
+
+                <div class="info">
+                    <h3 >subtotal</h3>
+                    <h3>preçosubtotal</h3>
+                </div>
+
+                <div class="info">
+                    <h3>entrega</h3>
+                    <h3>Endereço da entrega</h3>
+                </div>
+
+                <div class="info">
+                    <h3>total</h3>
+                    <h3>preço total</h3>
+                </div>
+            </div>
+            
+            <div class="forma-pagamento">
+                
+                <input type="radio" name="pagamento" id="pagamentoRadio" value="pix">
+                <label for="pagamento">PIX</label><br>
+                
+                <input type="radio" name="pagamento" id="pagamentoRadio" value="cartao-credito">
+                <label for="pagamento">cartao de credito</label><BR></BR>
+               
+
+                <button id="efetuarPagamento">EFETUAR PAGAMENTO</button>
+
+            </div>
+            
+           
+        </div>
+    </main>
+    
+
+   
+
+    <script src="../JAVASCRIPT/form.js"></script>
+    <script src="../JAVASCRIPT/produtos.js"></script>
+</body>
+
+</html>
